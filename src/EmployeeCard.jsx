@@ -1,5 +1,4 @@
-
-import PropTypes from "prop-types"; 
+import PropTypes from "prop-types";
 
 const EmployeeCard = ({ employee }) => {
   const handleBlock = () => {
@@ -12,12 +11,32 @@ const EmployeeCard = ({ employee }) => {
 
   return (
     <div className="employee-card">
-      <h3>{employee.name}</h3>
-      <p>{employee.role}</p>
-      <p>{employee.email}</p>
+      <div className="employeecard-heading">
+        <div>
+        <img
+          src={employee.image} // Render the employee's profile image
+          className="employee-image"
+        />
+
+        </div>
+
+        <div className="employee-namerole">
+        <h3 className="employee-name">{employee.name}</h3>
+        <p className='employee-role'>{employee.role}</p>
+
+        </div>
+      </div>
+      <div className="employee-email">
+      <span>Email: </span><p>{employee.email}</p>
+
+      </div>
       <div className="button-group">
-        <button className="block-btn" onClick={handleBlock}>Block</button>
-        <button className="details-btn" onClick={handleDetails}>Details</button>
+        <button className="block-btn" onClick={handleBlock}>
+          Block
+        </button>
+        <button className="details-btn" onClick={handleDetails}>
+          Details
+        </button>
       </div>
     </div>
   );
@@ -30,6 +49,7 @@ EmployeeCard.propTypes = {
     role: PropTypes.string.isRequired,
     email: PropTypes.string.isRequired,
     status: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
   }).isRequired,
 };
 

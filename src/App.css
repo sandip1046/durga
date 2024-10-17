@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   margin: 0;
   padding: 0;
 }
@@ -8,6 +8,25 @@ body {
 .App {
   padding: 20px;
 }
+.headertop{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.profile-section{
+  display: flex;
+  gap: 10px;
+  color: #000000;
+}
+.profile-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex-direction: row;
+}
+
 .lowerHeader{
   display: flex;
   justify-content: space-between;
@@ -16,6 +35,56 @@ body {
 .total-employees{
   font-size: 30px;
   font-weight: bold;
+  color: #000000;
+}
+.profile-image{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.employee-image{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+.employeecard-heading{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+}
+.employee-namerole{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.employee-name{
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+.employee-role{
+  font-size: 15px;
+  color: #1f1f1f;
+}
+.employee-email{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.employee-email span{
+  font-size: 15px;
+  color: #1f1f1f;
+}
+.employee-email p{
+  font-size: 15px;
   color: #000000;
 }
 
@@ -28,11 +97,33 @@ header {
 }
 
 .search-bar {
+  background-color: #ffffff;
+  color: #000000;
   width: 300px;
   padding: 10px;
   font-size: 16px;
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #333131;
+}
+.search-wrapper {
+  position: relative;
+display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+}
+.search-icon {
+  position: absolute;
+  left: 8px; /* Position the icon inside the input */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #888;
+}
+
+::placeholder {
+  padding-left: 18px; /* Gap between icon and placeholder */
 }
 
 .filter-section {
@@ -42,14 +133,16 @@ header {
 
 .filter-section button {
   padding: 10px 20px;
-  background-color: #201e1e;
+  background-color: #ebebebfa;
+  color: #000000;
   border: none;
   border-radius: 20px;
   cursor: pointer;
 }
 
 .filter-section button:hover {
-  background-color: #ccc;
+  background-color: #121111;
+  color: #ffffff;
 }
 
 .employee-container {
@@ -59,7 +152,7 @@ header {
 }
 
 .employee-card {
-  background-color: #dcd6d6;
+  background-color: #e6e6e6;
   color: black;
   padding: 20px;
   border-radius: 12px;
@@ -85,19 +178,21 @@ header {
 }
 
 .block-btn {
-  background-color: #ff4d4d;
-  color: #fff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .details-btn {
-  background-color: #007bff;
-  color: #fff;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .block-btn:hover {
-  background-color: #ff3333;
+  background-color: #f8f8f8;
+
 }
 
 .details-btn:hover {
-  background-color: #0056b3;
+  background-color: #312e2e;
+  
 }
