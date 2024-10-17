@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  padding: 20px;
+}
+.lowerHeader{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.total-employees{
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.filter-section {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-section button {
+  padding: 10px 20px;
+  background-color: #201e1e;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.filter-section button:hover {
+  background-color: #ccc;
+}
+
+.employee-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.employee-card {
+  background-color: #dcd6d6;
+  color: black;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.employee-card h3 {
+  margin: 10px 0;
+}
+
+.button-group {
+  margin-top: 10px;
+}
+
+.block-btn,
+.details-btn {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.block-btn {
+  background-color: #ff4d4d;
+  color: #fff;
+}
+
+.details-btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.block-btn:hover {
+  background-color: #ff3333;
+}
+
+.details-btn:hover {
+  background-color: #0056b3;
+}
